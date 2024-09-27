@@ -1,0 +1,33 @@
+.titulo{
+    margin-top: 80px;
+}
+
+.btn{
+    margin-top: 10px;
+    background-color: var(--dark-700);
+    border: none;
+}
+
+.campo{
+    color: #FFF;
+
+    h2{
+        font-size: 25px;
+        text-transform: capitalize;
+        margin-top: 15px;
+    }
+
+    ul{
+        margin-left: 22px;
+        margin-top: 5px;
+        width: 100%;
+        div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        li{
+            font-size: 18px;
+        }
+    }
+}
