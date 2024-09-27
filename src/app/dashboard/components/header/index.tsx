@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import styles from './styles.module.scss'
 import Image from 'next/image'
-import logoImg from '/Logo.svg'
+// import logoImg from '/public/Logo.svg'
 import { LogOutIcon } from 'lucide-react'
 import { deleteCookie } from 'cookies-next'
 import { useRouter } from 'next/navigation'
@@ -25,7 +25,7 @@ export function Header(){
         <Link href="/dashboard">
           <Image
             alt="Logo Sujeito Pizza"
-            src={logoImg}
+            src={"/logo.svg"}
             width={190}
             height={60}
             priority={true}

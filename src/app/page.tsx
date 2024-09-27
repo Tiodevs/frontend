@@ -1,7 +1,7 @@
 import { redirect } from "next/navigation";
 import styles from "./page.module.scss";
 import { api } from "./services/api";
-import LogoImg from '/Logo.svg'
+// import LogoImg from '/public/Logo.svg'
 import Image from "next/image";
 import Link from "next/link";
 import { cookies } from "next/headers";
@@ -53,9 +53,11 @@ export default function Home() {
     <>
       <div className={styles.containerCenter}>
         <Image
-          src={LogoImg}
+          src={"/logo.svg"}
           alt="Logo da empresa"
           className={styles.logo}
+          width={700}
+            height={80}
           priority
         />
 

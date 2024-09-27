@@ -1,13 +1,13 @@
 import Image from "next/image"
 import Link from "next/link"
 import styles from '../page.module.scss'
-import LogoImg from '/Logo.svg'
+// import LogoImg from '/Logo.svg'
 import { api } from "../services/api"
 import { redirect } from "next/navigation"
 
 export default function Signup() {
 
-    async function handleRegister(formData: FormData){
+    async function handleRegister(formData: FormData) {
         "use server"
 
         // 
@@ -16,18 +16,18 @@ export default function Signup() {
         const email = formData.get("email")
         const password = formData.get("password")
 
-        if(name === "" || email === "" ||password === "" ){
+        if (name === "" || email === "" || password === "") {
             console.log("Preencha todos os campos")
             return
         }
 
-        try{
-            await api.post("/users",{
+        try {
+            await api.post("/users", {
                 name: name,
                 email: email,
                 password: password
             })
-        }catch(err){
+        } catch (err) {
             console.log("error: ", err)
         }
 
@@ -38,9 +38,11 @@ export default function Signup() {
         <>
             <div className={styles.containerCenter}>
                 <Image
-                    src={LogoImg}
+                    src={"/logo.svg"}
                     alt="Logo da empresa"
                     className={styles.logo}
+                    width={700}
+                    height={80}
                 />
 
                 <section className={styles.login}>
