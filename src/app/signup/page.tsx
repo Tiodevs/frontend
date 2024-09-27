@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import styles from '../page.module.scss'
-import LogoImg from '/public/logo.svg'
+import LogoImg from '/Logo.svg'
 import { api } from "../services/api"
 import { redirect } from "next/navigation"
 

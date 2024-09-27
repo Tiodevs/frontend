@@ -1,7 +1,7 @@
 import { redirect } from "next/navigation";
 import styles from "./page.module.scss";
 import { api } from "./services/api";
-import LogoImg from '/public/logo.svg'
+import LogoImg from '/Logo.svg'
 import Image from "next/image";
 import Link from "next/link";
 import { cookies } from "next/headers";
