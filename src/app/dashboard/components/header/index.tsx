@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import styles from './styles.module.scss'
 import Image from 'next/image'
-import logoImg from '/public/logo.svg'
+import logoImg from '/logo.svg'
 import { LogOutIcon } from 'lucide-react'
 import { deleteCookie } from 'cookies-next'
 import { useRouter } from 'next/navigation'
