@@ -56,6 +56,7 @@ export default function Home() {
           src={LogoImg}
           alt="Logo da empresa"
           className={styles.logo}
+          priority
         />
 
         <section className={styles.login}>
@@ -66,6 +67,7 @@ export default function Home() {
               name="email"
               placeholder="Digite seu email"
               className={styles.input}
+              
             />
 
             <input
